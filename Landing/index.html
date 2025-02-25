@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Upload</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome, {{ name }}!</h2>
+
+        <!-- Drop Zone Container -->
+        <div id="drop-zone" class="drop-zone">
+            <img src="upload-icon.png" alt="Upload Icon">
+            <p>Drop Excel file here or click to browse</p>
+            <input type="file" id="file-input" accept=".xlsx, .xls, .csv">
+        </div>
+
+        <button id="add-record-btn">Add New Record</button>
+    </div>
+
+    <!-- Table Container (Separate from Drop Zone) -->
+    <div id="table-container">
+        <table id="data-table" class="data-table">
+            <thead>
+                <tr>
+                    <!-- Headers will be dynamically inserted here -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

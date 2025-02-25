@@ -1,0 +1,205 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.drop-zone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.drop-zone:hover {
+    background-color: #f8f9fa;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.data-table th {
+    background-color: #007bff;
+    color: white;
+} */
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 70%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Drop Zone */
+.drop-zone {
+    border: 2px dashed #147ae7;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.drop-zone img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.drop-zone p {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Table Container */
+#table-container {
+    width: 95%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+/* .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+} */
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+    font-size: 14px;
+}
+
+/* Sticky Header */
+.data-table thead {
+    background-color: #007bff;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* Alternate Row Coloring */
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Expandable Rows */
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clickable-row:hover {
+    background-color: #f0f0f0;
+}
+
+.expandable-row {
+    background-color: #eef;
+}
+
+.expandable-row td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.error-border {
+    border: 2px dashed red !important;
+    background-color: #ffe6e6;
+}
+
+#add-record-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 20px auto;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add-record-btn:hover {
+    background-color: #218838;
+}
+
+* Sticky Header */ .data-table thead {
+    background-color: #007bff;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
